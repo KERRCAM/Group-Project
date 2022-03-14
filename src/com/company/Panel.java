@@ -12,8 +12,8 @@ public class Panel extends JPanel implements Runnable{
     final int characterSize = 16;
     final int characterScaling = 3;
     public final int tileSize = characterSize*characterScaling;
-    final int maxScreenCol = 16; // how big actual window is
-    final int maxScreenRow = 50;
+    final int maxScreenCol = 24; // how big actual window is
+    final int maxScreenRow = 16;
     final int screenWidth = maxScreenCol * tileSize;
     final int screenHeight = maxScreenRow * tileSize;
 
