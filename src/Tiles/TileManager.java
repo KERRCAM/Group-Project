@@ -46,7 +46,9 @@ public class TileManager {
             tile[4].image = ImageIO.read(getClass().getResourceAsStream("/TerrainTiles/sky2.png"));
             tile[4].collision = false;
 
-
+            tile[5]=new Tile();
+            tile[5].image=ImageIO.read(getClass().getResourceAsStream("/TerrainTiles/terrain_center.png"));
+            tile[5].collision = true;
 
 
         }catch(IOException e){
