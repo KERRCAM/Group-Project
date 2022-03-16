@@ -10,14 +10,14 @@ public class mapCreating {
 
     public static void CreateMap(){
         Random random = new Random();
-        int mapX = random.nextInt(20-50);
-        int mapY = random.nextInt(20-50);
+        int mapX = random.nextInt(30)+20;
+        int mapY = random.nextInt(30)+20;
         try{
             FileWriter myWriter = new FileWriter(RandomGameMap.getName(),true);
             for (int i = 0; i < mapY; i++) {
                 myWriter.write("5 ");
                 for (int j = 0; j < mapX; j++) {
-                    int platformChance = random.nextInt(0-5);
+                    int platformChance = random.nextInt(5);
                     if (platformChance == 1){
                         myWriter.write("1 0 2 ");
                         i++;
