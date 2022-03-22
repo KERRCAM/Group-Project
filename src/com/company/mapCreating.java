@@ -35,6 +35,10 @@ public class mapCreating {
                 myWriter.write("5 \n");
 
             }
+
+            for (int i = 0; i < mapX+2; i++) {
+                myWriter.write("5 ");
+            }
             myWriter.close();
         }catch(Exception e){
             System.out.println("error:"+e);
