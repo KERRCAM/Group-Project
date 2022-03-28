@@ -15,8 +15,8 @@ public class mapCreating {
             System.out.println("File already exists.");
         }
         Random random = new Random();
-        int mapX = random.nextInt(20)+24;
-        int mapY = random.nextInt(50)+100;
+        int mapX = 50;
+        int mapY = 200;
 
             FileWriter myWriter = new FileWriter(RandomGameMap.getName(),false);
             for (int i = 0; i < mapY; i++) {
